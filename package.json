@@ -1,0 +1,23 @@
+{
+  "name": "poly-bit",
+  "version": "0.0.0",
+  "description": "poly-bit",
+  "author": "hemanth.hm",
+  "main": "cluster.js",
+  "engines": {
+    "node": "6.0.0"
+  },
+  "dependencies": {
+    "nodal": "0.12.5"
+  },
+  "devDependencies": {
+    "chai": "~3.5.0",
+    "mocha": "~2.4.5"
+  },
+  "scripts": {
+    "test": "mocha ./test/runner.js",
+    "start": "node cluster.js",
+    "worker": "node worker.js"
+  },
+  "private": true
+}
