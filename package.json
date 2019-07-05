@@ -8,7 +8,8 @@
     "node": "6.0.0"
   },
   "dependencies": {
-    "nodal": "0.12.5"
+    "nodal": "0.12.5",
+    "snyk": "^1.192.0"
   },
   "devDependencies": {
     "chai": "~3.5.0",
@@ -17,7 +18,10 @@
   "scripts": {
     "test": "mocha ./test/runner.js",
     "start": "node cluster.js",
-    "worker": "node worker.js"
+    "worker": "node worker.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
-  "private": true
+  "private": true,
+  "snyk": true
 }
